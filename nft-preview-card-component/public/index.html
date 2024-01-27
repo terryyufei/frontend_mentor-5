@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="output.css">
 </head>
-<body>
 
-  Equilibrium #3429
+<body class="bg-mainBgBlue m-5 flex justify-center items-center min-h-screen">
 
-  Our Equilibrium collection promotes balance and calm.
+  <main class="bg-cardBgBlue p-5 rounded-xl md:w-96">
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+    <!-- image div -->
+    <div class="relative">
+      <a href="#" class="block">
+        <img class="rounded-xl" src="./images/image-equilibrium.jpg" alt="equilibrium">
+        <div class="absolute inset-0 bg-cyan-500 opacity-0 hover:opacity-50 rounded-xl transition-opacity"></div>
+      </a>
+    </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+    <!-- text div -->
+    <div class="pt-5 pb-5">
+      <a href="#" class="text-white text-lg  hover:text-cyan">
+        Equilibrium #3429
+      </a>
+      <p class="text-softBlue pt-4">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+
+      <div class="flex justify-between pt-3">
+        <div class="flex gap-2">
+          <img src="./images/icon-ethereum.svg" alt="eye">
+          <p class="text-cyan">0.041 ETH </p>
+        </div>
+        <div class="flex gap-2">
+          <img src="./images/icon-clock.svg" alt="clock">
+          <p class="text-softBlue">3 days left</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-lineBgBlue border-t-2 pt-5 flex gap-4">
+      <img class="w-10 border rounded-full border-white" src="./images/image-avatar.png" alt="avatar">
+      <p class="text-softBlue pt-2">
+        Creation of <a href="#" class="text-white  hover:text-cyan">Jules Wyvern</a>
+      </p>
+
+    </div>
+
+  </main>
+
+
+
+
 </body>
+
 </html>
