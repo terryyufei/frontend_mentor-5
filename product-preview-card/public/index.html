@@ -2,20 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
   <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+   <script src="https://cdn.tailwindcss.com"></script> 
+   <link rel="stylesheet" href="output.css">  
 </head>
-<body>
 
+<body class="bg-cream md:flex justify-center items-center">
+  <main class="p-5 md:flex justify-center items-center ">
+
+    <!-- image div -->
+    <div class="">
+    <div class="md:bg-desktop bg-mobile bg-no-repeat  bg-cover h-96 rounded-t-xl m-0"></div>
+    </div>
+
+    <!-- text div -->
+    <div class="bg-white">
+      <h3 class="p-4">
+        PERFUME
+      </h3>
+    </div>
+
+  </main>
+</body>
+</html>
+
+
+<!-- 
   Perfume
 
   Gabrielle Essence Eau De Parfum
@@ -27,10 +41,4 @@
   $169.99
 
   Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+ -->
