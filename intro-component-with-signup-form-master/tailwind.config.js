@@ -16,6 +16,10 @@ module.exports = {
       fontFamily: {
         "body": "'Poppins', sans-serif",
       },
+      backgroundImage: {
+        'desktop': "url('./images/intro-desktop.png')",
+        'mobile': "url('./images/intro-mobile.png')",
+      },
     },
   },
   plugins: [],
